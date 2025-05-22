@@ -1,0 +1,242 @@
+
+
+
+
+/* Reset and base styles */
+body {
+  width:100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  margin-left: 500px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #2c3e50;
+}
+
+.header p {
+  color: #7f8c8d;
+  margin-top: 10px;
+}
+
+/* Message Banner */
+.message {
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Add Todo Form */
+.add-todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.add-todo-form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.add-todo-form button:hover {
+  background-color: #2980b9;
+}
+
+.add-todo-form button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Summary Button */
+.summary-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.summarize-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.summarize-btn:hover {
+  background-color: #1e8449;
+}
+
+.summarize-btn:disabled {
+  background-color: #a9dfbf;
+  cursor: not-allowed;
+}
+
+.no-todos {
+  color: #999;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Todo Sections */
+.todos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.pending-todos,
+.completed-todos {
+  padding: 20px;
+  border-radius: 10px;
+  background: #fefefe;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+/* Todo Content */
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.todo-text {
+  font-size: 1rem;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #7f8c8d;
+}
+
+/* Edit Input */
+.edit-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.edit-input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 2px solid #95a5a6;
+  border-radius: 6px;
+  flex: 1;
+}
+
+.edit-buttons button {
+  margin-left: 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Actions */
+.todo-actions button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.todo-actions button:hover {
+  transform: scale(1.2);
+}
+
+/* Completed Todo Style */
+.todo-item.completed {
+  background: #ecf0f1;
+}
+
+.loading {
+  text-align: center;
+  color: #999;
+}
+
+.empty-state {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
